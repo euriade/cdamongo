@@ -7,7 +7,7 @@ import { CreateCarDto } from './dto/create-car.dto';
 @Injectable()
 export class CarsService {
 
-    constructor(@InjectModel(Car.name) private readonly Model<Car>) {}
+    constructor(@InjectModel(Car.name) private readonly carModel: Model<Car>) {}
 
     async create(createCarDto: CreateCarDto): Promise<Car> {
         const createdCar = await this.carModel.create(createCarDto);
