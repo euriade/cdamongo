@@ -1,9 +1,9 @@
-version: "3"
+version: '3'
 
-services: 
+services:
   mongodb:
     image: mongo:latest
-    environment: 
+    environment:
       - MONGODB_DATABASE="test"
-    ports: 
+    ports:
       - 27017:27017
