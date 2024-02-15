@@ -17,3 +17,11 @@ export class Car {
 }
 
 export const CarSchema = SchemaFactory.createForClass(Car);
+
+@Schema()
+export class Status {
+    @Prop()
+    name: string;
+}
+
+export const StatusSchema = SchemaFactory.createForClass(Status);
